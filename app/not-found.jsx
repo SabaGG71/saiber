@@ -13,7 +13,7 @@ export default function notFound() {
         minSize={1}
         maxSize={1}
         particleDensity={100}
-        className="container z-[-20] mask-error h-[500px] absolute"
+        className="container z-[-20] top-[23%] mask-error h-[500px] absolute"
         particleColor="#402BC9"
         animation={{
           direction: "bottom",
@@ -22,8 +22,10 @@ export default function notFound() {
           easing: "linear",
         }}
       />
-      <h1 className="text-[42px] font-semibold">🌌 Destination Unknown</h1>
-      <p className="w-[40%] relative mb-6 text-xl">
+      <h1 className="text-[42px] font-semibold max-md:leading-[40px]">
+        🌌 Destination Unknown
+      </h1>
+      <p className="w-[40%] max-md:w-[80%] max-md:text-lg relative mb-6 text-xl">
         🌠 Oops! This part of the universe seems uncharted. The stars may have
         shifted, or the planet you're looking for is light-years away. 🪐💫
       </p>
