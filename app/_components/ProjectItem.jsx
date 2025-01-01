@@ -11,7 +11,7 @@ export default function ProjectItem() {
   return (
     <section className="container max-lg:max-w-[80%] max-md:max-w-[95%] pb-48">
       <div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 max-xl:max-w-[80%] max-xl:mx-auto gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 max-xl:max-w-[90%] max-xl:mx-auto gap-12">
           <div className="item cursor-pointer hover:bg-[#111219] transition-all duration-300 p-2 pb-9 bg-primary-800 rounded-[34px]">
             <Link href="/projects/1">
               <div className="border-radial-1 rounded-[30px] p-[5px]">

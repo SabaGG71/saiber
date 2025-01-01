@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import PhoneCall from "../../public/PhoneCall.svg";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
@@ -10,15 +11,21 @@ import Logo from "./Logo";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   return (
-    <section className="py-5 px-4  lg:py-6 fixed w-full top-0 z-40  ">
+    <section className="py-5 px-4 lg:py-6 fixed w-full top-0 z-50">
       <div className="container-nav">
         <div
           className={`shadow backdrop-blur ${
             isOpen ? "rounded-[20px]" : "rounded-full"
           }`}
         >
-          <div className="flex justify-between py-2 px-3 items-center sm:pr-3 ">
+          <div className="flex justify-between py-2 px-3 items-center sm:pr-3">
             <Logo />
             <div className="lg:flex flex-1 justify-left text-sm items-center hidden">
               <nav className="flex text-primary-50/90 mt-[2px] gap-7 font-medium">
@@ -60,7 +67,7 @@ export default function Navbar() {
                 </Link>
               </nav>
             </div>
-            <div className="flex justify-end gap-2 lg:mr-[-6px] ">
+            <div className="flex justify-end gap-2 lg:mr-[-6px]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -89,7 +96,7 @@ export default function Navbar() {
                   y1="12"
                   x2="21"
                   y2="12"
-                  className={("transition", twMerge(isOpen && "opacity-0"))}
+                  className={twMerge("transition", isOpen && "opacity-0")}
                 ></line>
                 <line
                   x1="3"
@@ -107,7 +114,7 @@ export default function Navbar() {
                 <span className="font-bold text-sm">Active</span>
 
                 <Link href="/contact">
-                  <ContactButton className=" group mr-1 hover:bg-accent-600 duration-300 transition-all max-xl:mr-1">
+                  <ContactButton className="group mr-1 hover:bg-accent-600 duration-300 transition-all max-xl:mr-1">
                     <Image
                       src={PhoneCall}
                       width={19}
@@ -146,7 +153,7 @@ export default function Navbar() {
                     Skills
                   </Link>
                   <Link href="/contact">
-                    <ContactButton className="mr-1 flex items-center ">
+                    <ContactButton className="mr-1 flex items-center">
                       <Image
                         src={PhoneCall}
                         width={19}

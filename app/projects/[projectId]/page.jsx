@@ -23,7 +23,7 @@ export default function page({ params }) {
 
   return (
     <section className="max-xl:max-w-[80%] mx-auto container-nav mt-48">
-      <div className="fixed top-[130px] z-[99999]">
+      <div className="fixed top-[130px] z-40">
         <Link
           href="/projects"
           className="flex hover:bg-accent-900 duration-300 transition-all items-center gap-6 py-3 lg:py-4 px-7 border border-white/5 bg-[#12131a] text-white text-lg lg:text-xl font-medium rounded-full"
@@ -36,29 +36,29 @@ export default function page({ params }) {
           Back To Projects
         </Link>
       </div>
-      <h1 className="text-[27px] md:text-[32px] lg:text-[42px] font-bold mt-[250px]">
+      <h1 className="text-[27px] max-lg:text-center md:text-[32px] lg:text-[42px] font-bold mt-[250px]">
         {project.detailedtitle}
       </h1>
-      <p className="text-base md:text-[17px] lg:text-[19px] text-white/60 mt-4 mb-12 leading-8">
+      <p className="text-base max-lg:text-center md:text-[17px] lg:text-[19px] text-white/60 mt-4 mb-12 leading-7 lg:leading-8">
         {project.Detaileddescription}
       </p>
-      <div className="flex flex-col max-lg:inline-block lg:flex-row text-left justify-left items-left mb-[55px] gap-5 ">
+      <div className="flex items-center flex-col lg:flex-row mb-[55px] gap-5 ">
         <Link
           href={`${project.link}`}
           target="_blank"
-          className="flex bg-primary-800 py-3 px-6 border border-white/5 hover:bg-accent-600 transition-all duration-300 max-sm:mt-[40px] text-[17px] lg:text-lg items-center gap-5 text-lg font-regular max-lg:mt-4  rounded-full mr-1"
+          className="flex   bg-primary-800 py-3 px-6 border border-white/5 hover:bg-accent-600 transition-all duration-300 max-sm:mt-[40px] text-[17px] lg:text-lg items-center gap-5 text-lg font-regular max-lg:mt-4  rounded-full mr-1"
         >
           Visit Website
           <Image
             src={arrowTopRight}
-            className="hidden md:block w-[13px] h-[13px]"
+            className=" w-[13px] h-[13px]"
             alt="arrowTop-svg"
           />
         </Link>
         <Link
           href={`${project.github}`}
           target="_blank"
-          className="flex max-sm:mt-[40px] text-[17px] lg:text-lg items-center gap-5 text-lg font-regular max-lg:mt-4  rounded-full"
+          className="flex  max-sm:mt-[5px] text-[17px] lg:text-lg items-center gap-5 text-lg font-regular rounded-full"
         >
           Explore Code on GitHub
           <Image

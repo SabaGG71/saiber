@@ -11,7 +11,7 @@ export default function ContactCard() {
     <section className="container-nav mt-[180px]">
       <div className="grid max-lg:max-w-[80%] max-xl:max-w-[80%] max-md:max-w-[85%] mx-auto items-center gap-6 grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
         <div className="contact-box overflow-hidden hover:translate-y-[-10px]  transition-all duration-300 hover:bg-primary-900 py-9 px-6 relative border group border-white/10 rounded-3xl bg-[#0f0d1f] cursor-pointer">
-          <Link href="mailto:sgachechiladze881@gmail.com">
+          <a href="mailto:sgachechiladze881@gmail.com">
             <Image
               className="w-[45px] transition-all duration-300 group-hover:rotate-90 border border-accent-600 group-hover:border-white/20 h-[45px] bg-accent-900 group-hover:bg-primary-800 py-[10px] rounded-full absolute top-[40px] right-[40px]"
               src={arrowRight}
@@ -31,7 +31,7 @@ export default function ContactCard() {
             <p className="mt-1 group-hover:text-white text-[17px] text-primary-200">
               sgachechiladze881@gmail.com
             </p>
-          </Link>
+          </a>
         </div>
         <div className="contact-box overflow-hidden hover:translate-y-[-10px] transition-all duration-300 hover:bg-primary-900 group relative border border-white/10 py-9 px-6 rounded-3xl bg-[#0f0d1f] group-hover:bg-white cursor-pointer">
           <Link

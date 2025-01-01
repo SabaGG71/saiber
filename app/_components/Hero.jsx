@@ -58,6 +58,7 @@ export default function Hero() {
             <Image
               className="bg-[#ffffffd4] max-lg:bg-white z-[0] shadowForImage rounded-full flex justify-center items-center text-center"
               width={120}
+              quality={100}
               height={120}
               src={heroPic}
               alt="hero-picture"
