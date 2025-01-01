@@ -56,7 +56,7 @@ export default function Hero() {
         <div className="relative z-[10] -mt-9 ">
           <div className="flex flex-col items-center">
             <Image
-              className="bg-[#ffffffd4] max-md:w-[100px] max-md:h-[100px] max-lg:bg-white z-[0] shadowForImage rounded-full flex justify-center items-center text-center"
+              className="bg-[#ffffffd4] max-sm:w-[110px] max-sm:h-[110px] max-lg:bg-white z-[0] shadowForImage rounded-full flex justify-center items-center text-center"
               width={120}
               quality={100}
               height={120}
