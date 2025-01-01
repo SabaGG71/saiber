@@ -22,11 +22,11 @@ export default function page({ params }) {
   }
 
   return (
-    <section className="max-xl:max-w-[80%] mx-auto container-nav mt-48">
+    <section className="max-xl:max-w-[90%] mx-auto container-nav mt-48">
       <div className="fixed top-[130px] z-40">
         <Link
           href="/projects"
-          className="flex hover:bg-accent-900 duration-300 transition-all items-center gap-6 py-3 lg:py-4 px-7 border border-white/5 bg-[#12131a] text-white text-lg lg:text-xl font-medium rounded-full"
+          className="flex hover:bg-accent-900 duration-300 transition-all items-center gap-6 py-2 lg:py-4 px-6 border border-white/5 bg-[#12131a] text-white text-lg lg:text-xl font-medium rounded-full backProject "
         >
           <Image
             src={arrowTopRight}
@@ -36,13 +36,13 @@ export default function page({ params }) {
           Back To Projects
         </Link>
       </div>
-      <h1 className="text-[27px] max-lg:text-center md:text-[32px] lg:text-[42px] font-bold mt-[250px]">
+      <h1 className="text-[32px] max-lg:text-center md:text-[36px] lg:text-[42px] font-bold mt-[250px]">
         {project.detailedtitle}
       </h1>
-      <p className="text-base max-lg:text-center md:text-[17px] lg:text-[19px] text-white/60 mt-4 mb-12 leading-7 lg:leading-8">
+      <p className="text-[17px] max-lg:text-center lg:text-[19px] text-white/60 mt-4 mb-4 leading-7 lg:leading-8">
         {project.Detaileddescription}
       </p>
-      <div className="flex items-center flex-col lg:flex-row mb-[55px] gap-5 ">
+      <div className="flex items-center flex-col lg:flex-row mb-[75px] gap-5 ">
         <Link
           href={`${project.link}`}
           target="_blank"
