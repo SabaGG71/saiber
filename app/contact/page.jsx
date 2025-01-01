@@ -46,7 +46,6 @@ export default function ContactPage() {
         </div>
       </div>
 
-      {/* Header Section */}
       <div className="relative flex flex-col items-center justify-center text-center max-md:px-4">
         <div className="absolute top-0 z-[-1] h-[200px] w-[200px] bg-[#402BC9] blur-[140px]" />
 
