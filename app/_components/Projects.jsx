@@ -12,7 +12,7 @@ export default function Projects() {
           background="transparent"
           minSize={1}
           maxSize={1}
-          particleDensity={100}
+          particleDensity={50}
           className="w-[65%] opacity-70 overflow-hidden mask-project left-1/2 top-[-30%] -translate-x-1/2 h-[240px] -z-50 absolute"
           particleColor={["#402BC9", "#fff"]}
           animation={{
