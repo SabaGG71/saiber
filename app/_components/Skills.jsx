@@ -11,7 +11,7 @@ import next from "../../public/next.svg";
 import php from "../../public/php.svg";
 import mysql from "../../public/mysql.svg";
 import java from "../../public/java.svg";
-import graphql from "../../public/graphql.svg";
+import graphql from "../../public/neon.svg";
 import supabase from "../../public/supabase.svg";
 import downArrow from "../../public/downArrow.svg";
 import SkillModal from "../_components/SkillModal";
@@ -119,11 +119,11 @@ const skillData = [
   },
   {
     id: 11,
-    name: "GraphQL",
+    name: "Neon",
     description:
-      "Currently learning GraphQL, focusing on querying and managing data efficiently.",
+      "Familiar with Neon and Drizzle ORM, with basic experience integrating them into Next.js applications.",
     modalText:
-      "Familiar with the basics of GraphQL, including querying and manipulating data efficiently. Excited to dive deeper into its powerful features and how it can optimize data fetching in modern web applications.",
+      "Familiar with Neon and Drizzle ORM, with basic experience integrating them into Next.js applications. Continuously learning and applying these tools to build simple and effective backend solutions for web projects.",
     icon: graphql,
     bgColor: "#0b0b0f",
   },
