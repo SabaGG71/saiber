@@ -71,7 +71,7 @@ export default function Hero() {
           <h1
             className={`text-center max-sm:max-w-[100%] max-sm:mb-8 mt-[40px] md:text-6xl lg:max-w-3xl xl:text-[58px] mx-auto leading-[30px] xl:max-w-4xl max-md:text-3xl   max-[627px]:text-[25px] font-[700]`}
           >
-            Turning Creative Ideas Into Interactive Experiences
+            Turning Creative Ideas Into Interactive Experiences 👉
           </h1>
           <p className="text-center max-w-2xl max-lg:max-w-xl text-[22px] max-lg:text-xl mx-auto max-sm:text-lg text-white/70 mt-8 max-sm:mt-6">
             Crafting responsive, user-friendly websites with clean code and
